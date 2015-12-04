@@ -75,7 +75,7 @@ public class Controller extends HttpServlet {
             // validate the parameters
             if (name == null || indate == null || outdate == null
                     || name.isEmpty() || indate.isEmpty() || outdate.isEmpty()) {
-                url = "/createRecord.jsp";
+                url = "/checkIn.jsp";
             } else {
                 // insert this data record into the database
                 DAOSQLite.checkIn(user, dbPath);
@@ -84,16 +84,16 @@ public class Controller extends HttpServlet {
 
         } else if (action.equalsIgnoreCase("report")) {
             System.out.println("controller:report");
-            String name = request.getParameter("name");
+            String name = request.getParameter("room");
             if (name == null || name.isEmpty()) {
                 name = "%";
             }
-            String roomString = request.getParameter("room");
-            String indate = request.getParameter("indate");
-            String outdate = request.getParameter("outdate");
+            //String roomString = request.getParameter("room");
+            //String indate = request.getParameter("indate");
+            //String outdate = request.getParameter("outdate");
             List<User> mydata = DAOSQLite.retrieveAllRecords(dbPath);
-            request.setAttribute("name", name);
-            request.setAttribute("room", roomString);
+            //request.setAttribute("name", name);
+            //request.setAttribute("room", roomString);
             request.setAttribute("mydata", mydata);
             url = "/showRecords.jsp";
 

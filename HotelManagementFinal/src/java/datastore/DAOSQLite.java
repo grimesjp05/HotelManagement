@@ -55,7 +55,7 @@ public class DAOSQLite {
      * @return list of objects
      */
     public static List<User> retrieveAllRecords(String dbPath) {
-        String q = "select * from user where name like ?";
+        String q = "select * from user order by room";
         List<User> list = null;
         try (Connection conn = getConnectionDAO(dbPath);
                 PreparedStatement ps = conn.prepareStatement(q)) {

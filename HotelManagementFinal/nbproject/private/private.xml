@@ -3,7 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/HotelManagementFinal/src/java/servlets/Controller.java</file>
+            <file>file:/G:/HotelManagementFinal/web/showRecords.jsp</file>
+            <file>file:/G:/HotelManagementFinal/web/META-INF/context.xml</file>
+            <file>file:/G:/HotelManagementFinal/web/WEB-INF/web.xml</file>
+            <file>file:/G:/HotelManagementFinal/src/java/model/User.java</file>
+            <file>file:/G:/HotelManagementFinal/src/java/datastore/DAOSQLite.java</file>
+            <file>file:/G:/HotelManagementFinal/src/java/servlets/Controller.java</file>
+            <file>file:/G:/HotelManagementFinal/web/home.html</file>
+            <file>file:/G:/HotelManagementFinal/web/retrieveByRoom.jsp</file>
         </group>
     </open-files>
 </project-private>

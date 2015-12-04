@@ -27,14 +27,15 @@
         <h2>Room Status</h2>
         <form action="retrieve" method="get">
 
-            Name: <input type="text" name="name" size="70"
-                          placeholder="Enter name or leave blank and enter room number">
+            Name: <input type="number" name="room" size="70"
+                          placeholder="Enter Room or Leave Blank for Full List">
             <br><br>
 
-            Room Number: <input type="number" name="room" size="30" required>
+<!--            Room Number: <input type="number" name="room" size="30" required>
             <br><br>
-
+-->
             <input type="hidden" name="action" value="report">
+
 
             <input type="submit" name="submit" value="Submit">
             <br><br>

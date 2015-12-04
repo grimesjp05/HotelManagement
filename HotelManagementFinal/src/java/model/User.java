@@ -80,7 +80,7 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User{" + ", name=" + name + ", room="
+        return "User{" + "name=" + name + ", room="
                 + room + ", indate=" + indate + ", outdate=" + outdate
                 + ", notes=" + notes + '}';
     }
